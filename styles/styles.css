@@ -4,25 +4,38 @@
   font-style: normal;
 }
 /* Header */
-.header{
-    background-image: url('../Assets/Hero-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* width: 1440px;
-    height: 698px; */
-    height: 100vh; /* full viewport height */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
 }
-/* navigation */
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 200px 150px;
-    
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../Assets/Hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
 }
-nav ul li{
-    list-style: none;
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 nav h1{
     font-size: 34px;
@@ -39,27 +52,86 @@ nav button{
     font-size: 16px;
     font-weight: bold;
 }
-.banner-title p{
+nav h1,li{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+nav li{
+    list-style: none;
+}
+
+/* BANNER SECTION */
+.banner-section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-title {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-title p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4f46e5; /* indigo-600 */
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #4338ca; /* darker indigo */
+}
+/* body{
+    margin-left: 141px;
+    margin-right: 159px;
+} */
+/* Action Section */
+.action-section{
     display: flex;
-    text-align: center;
-    width: 905px;
-    height: 152px;
-    font-size: 65px;
+    justify-content: center;
+    gap: 220px;
+    margin-top: 116px;
+    margin-bottom: 116px;
+}
+
+.action-description{
+    width: 517px;
+    height: 203px;
+    margin-top: 62px;
+}
+.action-description h1{
+    font-size: 42px;
     font-weight: bold;
     color: #252432;
-    margin-left: 480px;
-    margin-right: 480px;
+    margin: 0;
 }
-.banner-title button{
+.action-description p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #252432;
+}
+.action-description button{
+    width: 229px;
+    height: 48px;
     border-radius: 10px;
     background-color: #4E47FF;
     color: white;
-    width: 174px;
-    height: 48px;
-    border: none;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 850px;
-    margin-right: 850px;
-    margin-top: 0;
+    border: none;
 }
