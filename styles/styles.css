@@ -4,8 +4,6 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
-/* Reset & Global */
 * {
   margin: 0;
   padding: 0;
@@ -18,13 +16,6 @@ html, body {
   overflow-x: hidden;
   background-color: #d6dded63;
   color: #252432;
-}
-
-/* Container */
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 2rem;
 }
 
 /* Header */
@@ -65,16 +56,20 @@ nav li {
   margin-right: 140px;
 }
 
-nav button {
+nav li button {
   border-radius: 10px;
+  border: none;
   background-color: #4E47FF;
   color: white;
   width: 132px;
   height: 48px;
-  border: none;
   font-size: 16px;
   font-weight: bold;
 }
+nav button:hover{
+    background-color: #4338ca;
+}
+
 
 /* Banner Section */
 .banner-section {
@@ -116,9 +111,9 @@ nav button {
 .action-section {
   display: flex;
   justify-content: center;
-  gap: 220px;
+  gap: 100px;
   margin-top: 116px;
-  margin-bottom: 116px;
+
 }
 .action-section button:hover{
   cursor: pointer;
@@ -133,21 +128,22 @@ nav button {
   width: 517px;
   height: 203px;
   margin-top: 62px;
+  max-width: 520px;
 }
 
 .action-description h1 {
   font-size: 42px;
   font-weight: bold;
   color: #252432;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .action-description p {
   font-size: 24px;
   font-weight: 400;
-  color: #252432;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  color: #25243262;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .action-description button {
@@ -163,15 +159,12 @@ nav button {
 
 /* Reviewer Section */
 .feedback{
-  max-width: 1140px;
-  height: 342px;
   margin: 0 auto;
   padding: 0 2rem;
+
 }
 
 .users-say h3{
-  width: 1080px;
-  height: 49px;
   font-size: 38px;
   font-weight: bold;
   color: #252432;
@@ -182,18 +175,21 @@ nav button {
   display: flex;
   gap: 20px;
   justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .cards{
   width: 360px;
-  height: 220px;
   border-radius: 14px;
   background-color: #ffffffbd;
   padding: 24px;
 }
 
 .cards h4{
-  font-size: 18px;  
+  font-size: 18px; 
+    margin-bottom: 10px;
+ 
 }
 .cards p{
   font-size: 14px;
@@ -208,20 +204,71 @@ nav button {
 .reviewer{
   display: flex;
   gap: 6px;
+  align-items: center;
+  
 }
 .reviewer img{
   border-radius: 20px;
+  
+}
+.stars-icon img{
+  padding-right: 4px;
 }
 
 .stars-icon, .title-subtitle{
   padding-bottom: 20px;
 }
-.title-subtitle h4{
-  padding-bottom: 10px;
-}
+
 .name-date{
-  padding-top: 5px;
+  padding-top: 15px;
+  margin-top: 15px;
 }
+
+/* Focus better section */
+
+.focus{
+  max-width: 1140px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  text-align: center;
+  margin-top: 135px;
+  margin-bottom: 90px;
+}
+.focus-info h1{
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 70px;
+}
+.focus-info p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #0000007b;
+}
+.focus-info button{
+  width: 195px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #4E47FF;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 20px;
+}
+.focus button:hover{
+  cursor: pointer;
+  background-color: #4338ca;
+}
+.focus-info h1,p{
+  padding-bottom: 20px;
+}
+.focus img{
+  border-radius: 48px;
+}
+
 /* Productive User Section */
 .productive-user-section {
   background-color: #4d47ff21;
@@ -305,7 +352,7 @@ form textarea{
   border-radius: 10px;
 }
 .form-heading{
-  font-size: 90px;
+  font-size: 80px;
   font-weight: bold;
   padding-top: 200px;
 }
@@ -335,7 +382,6 @@ footer{
   width: 531px;
   height: 221px;
   padding-top: 104px;
-  /* margin-top: 104px; */
   margin-left: 350px;
 }
 
@@ -343,7 +389,6 @@ footer h1{
   font-size: 100px;
   font-weight: 900;
   color: #4E47FF;
-  /* margin-left: 140px; */
 
 }
 footer p{
