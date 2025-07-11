@@ -1,22 +1,33 @@
+/* Raleway Font */
 .raleway-normal {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-/* Header */
+
+/* Reset & Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: 'Inter', sans-serif;
+  background-color: #d6dded63;
+  color: #252432;
 }
 
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header */
 .header {
   height: 100vh;
   width: 100vw;
@@ -30,38 +41,38 @@ body, html {
   padding: 2rem;
 }
 
-/* NAVIGATION */
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-nav h1{
-    font-size: 34px;
-    font-weight: 900;
-    color: #4E47FF;
-}
-nav button{
-    border-radius: 10px;
-    background-color: #4E47FF;
-    color: white;
-    width: 132px;
-    height: 48px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-nav h1,li{
-    margin-left: 140px;
-    margin-right: 140px;
+
+nav h1 {
+  font-size: 34px;
+  font-weight: 900;
+  color: #4E47FF;
+  margin-left: 140px;
 }
 
-nav li{
-    list-style: none;
+nav li {
+  list-style: none;
+  margin-right: 140px;
 }
 
-/* BANNER SECTION */
+nav button {
+  border-radius: 10px;
+  background-color: #4E47FF;
+  color: white;
+  width: 132px;
+  height: 48px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Banner Section */
 .banner-section {
   display: flex;
   flex: 1;
@@ -82,9 +93,9 @@ nav li{
   margin-bottom: 1.5rem;
 }
 
-button {
+.banner-title button {
   padding: 0.75rem 1.5rem;
-  background-color: #4f46e5; /* indigo-600 */
+  background-color: #4f46e5;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -93,45 +104,140 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
-  background-color: #4338ca; /* darker indigo */
-}
-/* body{
-    margin-left: 141px;
-    margin-right: 159px;
-} */
-/* Action Section */
-.action-section{
-    display: flex;
-    justify-content: center;
-    gap: 220px;
-    margin-top: 116px;
-    margin-bottom: 116px;
+.banner-title button:hover {
+  background-color: #4338ca;
 }
 
-.action-description{
-    width: 517px;
-    height: 203px;
-    margin-top: 62px;
+/* Action Section */
+.action-section {
+  display: flex;
+  justify-content: center;
+  gap: 220px;
+  margin-top: 116px;
+  margin-bottom: 116px;
 }
-.action-description h1{
-    font-size: 42px;
-    font-weight: bold;
-    color: #252432;
-    margin: 0;
+
+.action-description {
+  width: 517px;
+  height: 203px;
+  margin-top: 62px;
 }
-.action-description p{
-    font-size: 24px;
-    font-weight: 400;
-    color: #252432;
+
+.action-description h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #252432;
+  margin: 0;
 }
-.action-description button{
-    width: 229px;
-    height: 48px;
-    border-radius: 10px;
-    background-color: #4E47FF;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
+
+.action-description p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #252432;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.action-description button {
+  width: 229px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #4E47FF;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+/* Productive User Section */
+.productive-user-section {
+  background-color: #4d47ff21;
+  border-radius: 24px;
+  max-width: 1140px;
+  margin: 116px auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.productive-user-head {
+  font-size: 38px;
+  font-weight: bold;
+  color: #252432;
+  margin-bottom: 40px;
+}
+
+.users-data {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.users-data h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #4E47FF;
+}
+
+.users-data p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0000006c;
+}
+
+/* Form Section */
+.form{
+  max-width: 1140px;
+  height: 632px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  gap: 115px;
+
+}
+
+form{
+  margin-top: 100px;
+  
+}
+form label{
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+}
+form input{
+  width: 497px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+form textarea{
+  width: 497px;
+  height: 135px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.form-heading{
+  font-size: 90px;
+  font-weight: bold;
+  padding-top: 200px;
+}
+form button{
+  border-radius: 10px;
+  background-color: #4f46e5;
+  color: white;
+  width: 497px;
+  height: 70px;
+  border: none;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
