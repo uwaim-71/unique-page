@@ -40,6 +40,10 @@ html, body {
   justify-content: space-between;
   padding: 2rem;
 }
+.header button:hover{
+  cursor: pointer;
+  background-color: #4338ca;
+}
 
 /* Navigation */
 nav {
@@ -115,6 +119,14 @@ nav button {
   gap: 220px;
   margin-top: 116px;
   margin-bottom: 116px;
+}
+.action-section button:hover{
+  cursor: pointer;
+  background-color: #4338ca;
+}
+
+.action-section img{
+  border-radius: 48px;
 }
 
 .action-description {
@@ -245,7 +257,7 @@ nav button {
   color: #0000006c;
 }
 
-/* Form Section */
+/* Get in Touch Section */
 .form{
   max-width: 1140px;
   height: 632px;
@@ -257,6 +269,10 @@ nav button {
   justify-content: center;
   gap: 115px;
 
+}
+.form button:hover{
+  cursor: pointer;
+  background-color: #4338ca;
 }
 
 form{
