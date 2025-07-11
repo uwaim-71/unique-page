@@ -206,6 +206,7 @@ form label{
   display: block;
   margin-top: 15px;
   font-size: 18px;
+  font-weight: bold;
 }
 form input{
   width: 497px;
@@ -240,4 +241,49 @@ form button{
   margin-top: 10px;
   font-size: 16px;
   font-weight: bold;
+}
+
+/* Footer Section */
+footer{
+  background-color: white;
+  max-width: 1440px;
+  height: 428px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.footer-class{
+  width: 531px;
+  height: 221px;
+  padding-top: 104px;
+  /* margin-top: 104px; */
+  margin-left: 350px;
+}
+
+footer h1{
+  font-size: 100px;
+  font-weight: 900;
+  color: #4E47FF;
+  /* margin-left: 140px; */
+
+}
+footer p{
+  color: #8987A1;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li{
+  list-style: none;
+
+}
+footer li a{
+  text-decoration: none;
+  color: #8987A1;
 }
